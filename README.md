@@ -66,9 +66,11 @@ force-app/
 ├── lwc/
 │ ├── contactSearch/
 │ ├── contactPreview/
-│ └── searchAnalytics/
+│ └── contactSearchAnalytics/
 ├── classes/
-│ └── ContactSearchController.cls
+│ ├── ContactSearchController.cls
+│ ├── ContactPreviewController.cls
+│ └── ContactSearchAnalyticsController.cls
 └── messageChannels/
 └── ContactSearchMessageChannel.messageChannel-meta.xml
 
