@@ -1,18 +1,123 @@
-# Salesforce DX Project: Next Steps
+# Salesforce LWC – Contact Search Application
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This project is a Salesforce Lightning Web Components (LWC) application built as a portfolio and interview-ready example.  
+It demonstrates real-world LWC patterns, including reactive behavior, parent-child communication, Lightning Message Service, and UX best practices.
 
-## How Do You Plan to Deploy Your Changes?
+---
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## 🚀 Features
 
-## Configure Your Salesforce DX Project
+### 🔍 Contact Search
+- Search Contacts by **Name or Email**
+- Manual search via button
+- Auto-search with debounced input
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+### 🎛 Live Filters
+- Filter contacts with email only
+- Filters trigger search automatically
 
-## Read All About It
+### 📊 Search Analytics (Lightning Message Service)
+- Publishes search activity
+- Decoupled analytics component
+- Demonstrates LMS best practices
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+### 👁 Smart Contact Preview
+- Parent → Child communication
+- Preview opens on contact click
+- Close preview without clearing results
+- Preview resets on new search
+
+### 🧹 Clear Search
+- Resets search, filters, preview, and state
+- UI reacts automatically via computed getters
+
+---
+
+## 🧠 Concepts Demonstrated
+
+- Lightning Web Components lifecycle
+- Reactive state management
+- Debouncing user input
+- Imperative Apex calls
+- Lightning Message Service (LMS)
+- Parent → Child communication
+- Conditional rendering
+- SLDS-compliant styling
+- Salesforce navigation
+
+---
+
+## 🛠 Technologies Used
+
+- Salesforce Lightning Web Components (LWC)
+- Apex
+- SLDS (Salesforce Lightning Design System)
+- Lightning Message Service
+- Salesforce CLI
+- Git / GitHub
+
+---
+
+## 📦 Project Structure
+
+force-app/
+└── main/
+└── default/
+├── lwc/
+│ ├── contactSearch/
+│ ├── contactPreview/
+│ └── searchAnalytics/
+├── classes/
+│ └── ContactSearchController.cls
+└── messageChannels/
+└── ContactSearchMessageChannel.messageChannel-meta.xml
+
+
+---
+
+## ▶️ How to Deploy This Project in Another Salesforce Org
+
+### 🔹 Prerequisites
+- Salesforce CLI installed
+- A Salesforce Developer Edition or Trailhead Playground
+
+---
+
+### 
+
+🔹 Step 1 — Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/salesforce-lwc-contact-search.git
+cd salesforce-lwc-contact-search
+
+🔹 Step 2 — Authenticate to Salesforce
+
+sf org login web
+
+(or)
+
+sfdx auth:web:login
+
+🔹 Step 3 — Deploy to the Org
+
+sf project deploy start
+
+(or)
+
+sfdx force:source:push
+
+🔹 Step 4 — Add Components to a Lightning Page
+
+Open Setup → Lightning App Builder
+
+Edit a Home Page (or create a new one)
+
+Add:
+
+Contact Search 
+Search Analytics
+
+Save & Activate
+
+## Thank you for supporting
