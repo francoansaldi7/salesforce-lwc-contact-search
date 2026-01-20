@@ -1,0 +1,37 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-19-2026
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card>
+        <!-- Custom centered header -->
+        <div slot="title" class="card-header">
+            <lightning-icon
+                icon-name="utility:chart"
+                size="small"
+                class="header-icon">
+            </lightning-icon>
+            <span class="header-title">Search Analytics</span>
+        </div>
+
+        <div class="analytics-container">
+            <div class="metric">
+                <span class="label">Searches</span>
+                <span class="value">{searchCount}</span>
+            </div>
+
+            <div class="metric">
+                <span class="label">Last Term</span>
+                <span class="value">{lastSearchTerm}</span>
+            </div>
+
+            <div class="metric">
+                <span class="label">Session</span>
+                <span class="value">{sessionTime}s</span>
+            </div>
+        </div>
+    </lightning-card>
+</template>

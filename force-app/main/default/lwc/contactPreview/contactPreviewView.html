@@ -1,0 +1,33 @@
+<template>
+    <lightning-card>
+        
+        <span slot="title">
+            <a
+                href="javascript:void(0)"
+                class="contact-name"
+                onclick={navigateToContact}>
+                {contact.Name}
+            </a>
+        </span>
+
+        <lightning-button-icon
+            slot="actions"
+            icon-name="utility:close"
+            alternative-text="Close"
+            onclick={handleClose}
+            class="close-button"
+            variant="destructive">
+        </lightning-button-icon>
+
+        <div class="card-body">
+            <p>{contact.Title}</p>
+            <p>{contact.Email}</p>
+            <p>{contact.Phone}</p>
+            <p class="slds-text-color_weak">
+                {contact.Account.Name}
+            </p>
+        </div>
+
+    </lightning-card>
+</template>
+

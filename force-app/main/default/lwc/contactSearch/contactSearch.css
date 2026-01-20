@@ -1,0 +1,95 @@
+/* Custom styles for the search container */
+.search-container {
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    max-height: 600px;  /* Set a fixed max height for the component: Adjust as needed (e.g., 300px for smaller) */
+    background-color: var(--lwc-colorBackgroundAlt);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 700px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the search input and button */
+.search-input {
+    margin-bottom: 1rem;
+}
+
+.search-button {
+    margin-left: 0.5rem;
+}
+
+.scrollable-content {
+    flex: 1;  /* Grow to fill remaining space */
+    overflow-y: auto;  /* Scroll only this section */
+    /* Remove max-height calc; flex handles it */
+}
+
+/* Style the results list */
+.results-list {
+    margin-top: 1rem;
+    max-height: none;  /* Remove fixed height; let it expand within the container */
+    overflow-y: visible;  /* No scrollbar here; handled by container */
+    border: 1px solid var(--lwc-colorBorder);  /* Optional: Subtle border for the scrollable area */
+    padding: 0.5rem;    /* Add padding inside the scrollable area */
+}
+
+.results-list .slds-list__item {
+    padding: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.results-list .slds-list__item:last-child {
+    border-bottom: none;
+}
+
+/* Style the contact links */
+.contact-link {
+    color: #0070d2; /* Salesforce blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    color: #005fb2;
+    text-decoration: underline;
+}
+
+/* Error message styling */
+.error-message {
+    color: #c23934; /* Salesforce red */
+    font-weight: bold;
+}
+
+/* Container for the clear button: Position at bottom right */
+.clear-button-container {
+    position: sticky;
+    bottom: 0;  /* Fixed at the bottom */
+    left: 0;
+    right: 0;
+    background-color: var(--lwc-colorBackgroundAlt);
+    border-top: 1px solid var(--lwc-colorBorder);  /* Separator */
+    padding: 0.5rem 1rem;  /* Spacing */
+    z-index: 1;  /* Ensure it layers above content */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.clear-button {
+    border-radius: 8px;
+}
+
+/* Styling for no results message */
+.no-results-message {
+    font-style: italic;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--lwc-colorTextWeak);  /* Subtle color using SLDS token */
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}

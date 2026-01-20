@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Contact Search Message Channel</masterLabel>
+    <description>Message channel for Contact Search analytics</description>
+    <isExposed>true</isExposed>
+
+    <lightningMessageFields>
+        <fieldName>searchTerm</fieldName>
+        <description>Search term entered by the user</description>
+    </lightningMessageFields>
+</LightningMessageChannel>

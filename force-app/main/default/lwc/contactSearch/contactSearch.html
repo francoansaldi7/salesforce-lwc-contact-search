@@ -1,0 +1,82 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-20-2026
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <div class="slds-m-around_medium search-container">
+        <h1>Contact Search</h1>
+
+        <lightning-input
+            class="search-input"
+            label="Search Contacts"
+            value={searchTerm}
+            onchange={handleSearchTermChange}>
+        </lightning-input>
+
+        <lightning-button
+            class="search-button"
+            label="Search"
+            onclick={handleSearch}
+            variant="brand">
+        </lightning-button>
+
+        <div class="filters">
+            <lightning-input
+                type="checkbox"
+                label="Only contacts with email"
+                checked={hasEmail}
+                onchange={handleEmailFilter}>
+            </lightning-input>
+        </div>
+
+        <template if:true={noResultsMessage}>
+            <p class="slds-text-color_weak no-results-message">
+                {noResultsMessage}
+            </p>
+        </template>
+
+        <div class="scrollable-content">
+            <template if:true={contacts}>
+                <ul class="slds-list_vertical slds-list_vertical-space results-list">
+                    <template for:each={contacts} for:item="contact">
+                        <li key={contact.Id} class="slds-list__item">
+                            <a
+                                class="contact-link"
+                                data-id={contact.Id}
+                                onclick={handleContactSelect}>
+                                {contact.Name} ({contact.Email})
+                            </a>
+                        </li>
+                    </template>
+                </ul>
+
+                <template if:true={showClearButton}>
+                    <div class="clear-button-container">
+                        <lightning-button
+                            class="clear-button"
+                            label="Clear search"
+                            onclick={handleClearSearch}
+                            variant="destructive">
+                        </lightning-button>
+                    </div>
+                </template>
+            </template>
+
+            <template if:true={error}>
+                <p class="slds-text-color_error error-message">
+                    {error}
+                </p>
+            </template>
+        </div>
+
+        <template if:true={hasSelectedContact}>
+            <c-contact-preview
+                contact-id={selectedContactId}
+                onclose={handlePreviewClose}>
+            </c-contact-preview>
+        </template>
+    </div>
+</template>
