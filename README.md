@@ -92,6 +92,7 @@ force-app/
 ```bash
 git clone https://github.com/YOUR_USERNAME/salesforce-lwc-contact-search.git
 cd salesforce-lwc-contact-search
+```bash
 
 🔹 Step 2 — Authenticate to Salesforce
 
