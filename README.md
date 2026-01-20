@@ -92,23 +92,26 @@ force-app/
 ```bash
 git clone https://github.com/YOUR_USERNAME/salesforce-lwc-contact-search.git
 cd salesforce-lwc-contact-search
-```bash
+```
 
 🔹 Step 2 — Authenticate to Salesforce
 
+```bash
 sf org login web
-
+```
 (or)
-
+```bash
 sfdx auth:web:login
+```
 
 🔹 Step 3 — Deploy to the Org
-
+```bash
 sf project deploy start
-
+```
 (or)
-
+```bash
 sfdx force:source:push
+```
 
 🔹 Step 4 — Add Components to a Lightning Page
 
