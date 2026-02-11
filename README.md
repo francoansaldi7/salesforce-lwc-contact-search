@@ -5,16 +5,16 @@ This project is a Salesforce Lightning Web Components (LWC) application that sea
 ---
 # Index:
 
-# Features
-# Technologies Used
-# Project Structure
-# How to Deploy This Project in Another Salesforce Org
+# [Features]
+# [Technologies Used]
+# [Project Structure]
+# [How to Deploy This Project in Another Salesforce Org]
 
 ---
 
-## Features
+## Features(#features)
 
-### Contact Search
+### Contact Search 
 - Search Contacts by **Name or Email**
 - Manual search via button
 - Auto-search with debounced input
@@ -40,7 +40,7 @@ This project is a Salesforce Lightning Web Components (LWC) application that sea
 
 ---
 
-## Technologies Used
+## Technologies Used(#technologies-used)
 
 - Salesforce Lightning Web Components (LWC)
 - Apex
@@ -51,7 +51,7 @@ This project is a Salesforce Lightning Web Components (LWC) application that sea
 
 ---
 
-## Project Structure
+## Project Structure(#project-structure)
 
 force-app/
 └── main/
@@ -70,7 +70,7 @@ force-app/
 
 ---
 
-## How to Deploy This Project in Another Salesforce Org
+## How to Deploy This Project in Another Salesforce Org(#how-to-deploy-this-project-in-another-salesforce-org)
 
 ###  *Prerequisites
 - Salesforce CLI installed
