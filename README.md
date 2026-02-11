@@ -6,9 +6,10 @@ This project is a Salesforce Lightning Web Components (LWC) application that sea
 # Index:
 
 [Features](#features)
-[Technologies Used]
-[Project Structure]
-[How to Deploy This Project in Another Salesforce Org]
+[Technologies Used](#technologies-used)
+[Project Structure](#project-structure)
+[How to Deploy This Project in Another Salesforce Org](#how-to-deploy-this-project-in-another-salesforce-org)
+
 
 ---
 
@@ -40,7 +41,7 @@ This project is a Salesforce Lightning Web Components (LWC) application that sea
 
 ---
 
-## Technologies Used(#technologies-used)
+## Technologies Used
 
 - Salesforce Lightning Web Components (LWC)
 - Apex
@@ -51,7 +52,7 @@ This project is a Salesforce Lightning Web Components (LWC) application that sea
 
 ---
 
-## Project Structure(#project-structure)
+## Project Structure
 
 force-app/
 └── main/
@@ -70,8 +71,7 @@ force-app/
 
 ---
 
-## How to Deploy This Project in Another Salesforce Org(#how-to-deploy-this-project-in-another-salesforce-org)
-
+## How to Deploy This Project in Another Salesforce Org
 ###  *Prerequisites
 - Salesforce CLI installed
 - A Salesforce Developer Edition or Trailhead Playground
