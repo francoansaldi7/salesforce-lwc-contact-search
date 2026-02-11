@@ -6,8 +6,11 @@ This project is a Salesforce Lightning Web Components (LWC) application that sea
 # Index:
 
 [Features](#features)
+
 [Technologies Used](#technologies-used)
+
 [Project Structure](#project-structure)
+
 [How to Deploy This Project in Another Salesforce Org](#how-to-deploy-this-project-in-another-salesforce-org)
 
 
