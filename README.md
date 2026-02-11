@@ -5,14 +5,14 @@ This project is a Salesforce Lightning Web Components (LWC) application that sea
 ---
 # Index:
 
-# [Features]
-# [Technologies Used]
-# [Project Structure]
-# [How to Deploy This Project in Another Salesforce Org]
+[Features](#features)
+[Technologies Used]
+[Project Structure]
+[How to Deploy This Project in Another Salesforce Org]
 
 ---
 
-## Features(#features)
+## Features
 
 ### Contact Search 
 - Search Contacts by **Name or Email**
