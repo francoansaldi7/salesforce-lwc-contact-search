@@ -3,6 +3,11 @@
 This project is a Salesforce Lightning Web Components (LWC) application that searches for contacts. 
 
 ---
+# Index:
+## Features
+## Technologies Used
+## Project Structure
+## How to Deploy This Project in Another Salesforce Org
 
 ## Features
 
