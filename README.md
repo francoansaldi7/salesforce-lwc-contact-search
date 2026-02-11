@@ -1,53 +1,38 @@
 # Salesforce LWC – Contact Search Application
 
-This project is a Salesforce Lightning Web Components (LWC) application built as a portfolio and interview-ready example.  
-It demonstrates real-world LWC patterns, including reactive behavior, parent-child communication, Lightning Message Service, and UX best practices.
+This project is a Salesforce Lightning Web Components (LWC) application that searches for contacts. 
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🔍 Contact Search
+### Contact Search
 - Search Contacts by **Name or Email**
 - Manual search via button
 - Auto-search with debounced input
 
-### 🎛 Live Filters
+### Live Filters
 - Filter contacts with email only
 - Filters trigger search automatically
 
-### 📊 Search Analytics (Lightning Message Service)
+### Search Analytics (Lightning Message Service)
 - Publishes search activity
 - Decoupled analytics component
 - Demonstrates LMS best practices
 
-### 👁 Smart Contact Preview
+### Smart Contact Preview
 - Parent → Child communication
 - Preview opens on contact click
 - Close preview without clearing results
 - Preview resets on new search
 
-### 🧹 Clear Search
+### Clear Search
 - Resets search, filters, preview, and state
 - UI reacts automatically via computed getters
 
 ---
 
-## 🧠 Concepts Demonstrated
-
-- Lightning Web Components lifecycle
-- Reactive state management
-- Debouncing user input
-- Imperative Apex calls
-- Lightning Message Service (LMS)
-- Parent → Child communication
-- Conditional rendering
-- SLDS-compliant styling
-- Salesforce navigation
-
----
-
-## 🛠 Technologies Used
+## Technologies Used
 
 - Salesforce Lightning Web Components (LWC)
 - Apex
@@ -58,7 +43,7 @@ It demonstrates real-world LWC patterns, including reactive behavior, parent-chi
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 force-app/
 └── main/
@@ -77,9 +62,9 @@ force-app/
 
 ---
 
-## ▶️ How to Deploy This Project in Another Salesforce Org
+## How to Deploy This Project in Another Salesforce Org
 
-### 🔹 Prerequisites
+###  *Prerequisites
 - Salesforce CLI installed
 - A Salesforce Developer Edition or Trailhead Playground
 
@@ -87,14 +72,14 @@ force-app/
 
 ### 
 
-🔹 Step 1 — Clone the Repository
+Step 1 — Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/salesforce-lwc-contact-search.git
 cd salesforce-lwc-contact-search
 ```
 
-🔹 Step 2 — Authenticate to Salesforce
+Step 2 — Authenticate to Salesforce
 
 ```bash
 sf org login web
@@ -104,7 +89,7 @@ sf org login web
 sfdx auth:web:login
 ```
 
-🔹 Step 3 — Deploy to the Org
+Step 3 — Deploy to the Org
 ```bash
 sf project deploy start
 ```
@@ -113,7 +98,7 @@ sf project deploy start
 sfdx force:source:push
 ```
 
-🔹 Step 4 — Add Components to a Lightning Page
+Step 4 — Add Components to a Lightning Page
 
 Open Setup → Lightning App Builder
 
